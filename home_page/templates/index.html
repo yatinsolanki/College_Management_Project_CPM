@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'home_page/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home_page/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="" id="firstbody">
+
+        <!-- first navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active ">
+                        <a class="nav-link text-white" href="#"> Careers <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Libary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">ELearning</a>
+                    </li>
+                    <!-- nt login -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'studlogin' %}">Login </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- second navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#firstbody"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Life@Gyanodaya</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Placements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Hostel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- search bar -->
+    <div class="row mx-5 my-4">
+        <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-1 col-md-8 col-sm-8 col-xs-10">
+            <form action="" autocomplete="off" class="navbar-form" method="post" accept-charset="utf-8">
+                {% csrf_token %}
+                <div class="box">
+                    <form action="">
+                        <input type="text" name="" placeholder="Search...">
+                        <input type="submit" name="" value="Search">
+                    </form>
+                </div>
+                <div class="input-group">
+                    <input name="searchtext" value="" class="form-control input-group" type="text">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" style="border-radius:0 250px 250px 0;width: 150px;" type="submit"
+                            id="addressSearch">Submit
+                            <span class="icon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- image tag &  -->
+    <!--  -->
+    <div id="homeimg">
+        <img style="width: 100%;" src="{% static 'home_page/img/college_home.jpg' %}" alt="img not found" srcset="">
+        <div class="con">
+            <div class="row ">
+                <div style="text-align: center;" class="col-3 ">Providing <br>
+                    <h1>76 Courses</h1> to select from
+                </div>
+                <div style="text-align: center;" class="col-3  ">Spread Over<h1>58 Acre</h1>campus area</div>
+                <div style="text-align: center;" class="col-3 ">
+                    <h1>Unmatched Placements</h1>with seperate training & skill development department
+                </div>
+                <div style="text-align: center;" class="col-3 ">Latest <h1>Technologies</h1> lo learn from:- Online &
+                    Offline</div>
+            </div>
+        </div>
+        <!-- next info bar -->
+        <div id="imgdiv" class="">
+            <img class="" src="{% static 'home_page/img/imgbg1.jpg' %}" style="width: 100%;" alt="" srcset="">
+            <div class="" id="posdivHead">
+                <h1>Gyanodaya has Completed 15 years of successfully journey</h1>
+            </div>
+            <!-- first row -->
+            <div class="row w-100 posdiv1">
+                <div style="text-align: left; background-color: rgb(14, 170, 220);" class="offset-4 col-4">
+                    <h1>10,000+ </h1>
+                    <h4>Students</h4>
+                </div>
+                <div style="text-align: left; background-color: #FFC73E ;" class=" col-4">
+                    <h1>500+</h1>
+                    <h4>Faculty Members</h4>
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row w-100 posdiv2">
+                <div style="text-align: left; background-color:#ff7373 ; " class="col-4">
+                    <h1>58 Acres </h1>
+                    <h4>of Lush Freen Campus</h4>
+                </div>
+                <div style="text-align: left; background-color:#0eaadc ;" class=" col-4">
+                    <h1>International</h1>
+                    <h4>Collaborations</h4>
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row w-100 posdiv3">
+                <div style="text-align: left; background-color:#ffc73e ;" class="offset-4 col-4 border border-0">
+                    <h1>Globally recognized</h1>
+                    <h4>outcome Based Education</h4>
+                </div>
+                <div style="text-align: left; background-color: #ff7373 ;" class=" col-4 border border-0">
+                    <h1>Research</h1>
+                    <h4>Focused Studies</h4>
+                </div>
+            </div>
+            <div class="posdiv4">
+                <h3 style="padding-top: 2% ;color: #faf0e6;">Gyanodaya Trust Believes in taking the Nation forward by
+                    improving the quality of life of its citizens by continously working in the sphere of education,
+                    health in enviroment. </h3>
+            </div>
+            <br>
+        </div>
+        <!-- course Offered -->
+        <div class="offer" style="text-align:center ; padding: 3% ;">
+            <h1>PROGRAM OFFERED</h1>
+            <h4>
+                The greatest personally satisfying career is built on the pillars of your aptitude, skills, understanding and analysis of future impact on your personal and professional well-being. The tag of being "Best MBA and Engineering Colleges" is a responsibilit we don't take lightly.
+            </h4>
+        </div>
+        
+        <!-- cards -->
+        <!-- card 1 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center; margin-bottom: 15px;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips1.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CB.ARCH, M.ARCH</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to -->
+                                <!-- additional content. This content is a little bit longer.</p> -->
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips2.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B. TECH | M. TECH</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips3.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">BCA  |  MCA  |  MCA (INTEGRATED)</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center; margin-bottom: 15px;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips4.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B. SC. | M.SC.| B.Lib | MSW</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center; margin-bottom: 15px">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips5.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B. COM | M. COM</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips6.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B. ED.</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips7.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B.A.LL.B. (HONS.), BBA LLB (HONS.), L.L.B. (HONS.), LLM</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips8.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                B.F.A. – BACHELOR OF FINE ARTS  | M.F.A. - MASTER OF FINE ARTS</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips9.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">B.A. (TRAVEL & TOURISM)</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips10.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">BA (MASS COMM), MA (MASS COMM), B.SC. ( ELECT MEDIA)</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips11.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">MUSIC, DANCE, DRAMA & THEATER, B.P.A. & M.P.A.</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;height: 15rem;text-align: center;">
+                        <img class="card-img-top" src="{% static 'home_page/img/course/ips12.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">BACHELOR OF HOTEL MANAGEMENT  | BBA (HOTEL MANAGEMENT)</h5>
+                            <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<!-- <script src="{% static 'home_page/js/jquery.js' %}"></script>
+<script src="{% static 'home_page/js/popper.js' %}"></script>
+<script src="{% static 'home_page/js/bootstrap.js' %}"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

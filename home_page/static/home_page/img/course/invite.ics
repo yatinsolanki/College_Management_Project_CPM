@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20230716T190000
+DTEND;TZID=Asia/Kolkata:20230716T220000
+DTSTAMP:20230715T081517Z
+ORGANIZER;CN=hi@growthschool.io:mailto:hi@growthschool.io
+UID:5jef7oah5kjl76k68rsvkfqgid@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ajayparihar876@gmail.com;X-NUM-GUESTS=0:mailto:ajayparihar876@gmail
+ .com
+X-GOOGLE-CONFERENCE:https://meet.google.com/cny-bjuw-okh
+X-MICROSOFT-CDO-OWNERAPPTID:797719009
+CREATED:20230715T081507Z
+DESCRIPTION:<p>🔥 Tomorrow is the day when you will witness all the crazy h
+ acks\, make sure you join in🤯</p><p>Just to clarify things.</p><p><strong>
+ Tomorrow is the 3 Hour LinkedIn Masterclass!!</strong></p><p>Date: 16th Jul
+ y</p><p>Time: 7 PM onwards</p><p>On the call we will:</p><p>👉Conduct a bri
+ ef welcome ceremony for you</p><p>👉Discuss the workshop</p><p>👉Share my l
+ earnings and hacks<br><br></p><p>You are going to learn plenty of hacks but
+  to name a few:</p><p>👉Unlimited LinkedIn profile searches with Free Linke
+ dIn</p><p>👉How to make advanced searches without a sales navigator</p><p>
+ 👉3 Ways to grow LinkedIn Company page</p><p>👉Use LinkedIn to understand h
+ ow much you should get paid</p><p>👉3 Hacks to Boost your Content Engagemen
+ t</p><p>And many more…..<br><br></p><p>❌ No Recording of the Masterclass wi
+ ll be provided\, so if you miss it then you just miss it. ❌</p><p>Keep on c
+ hecking the group as I'll be revealing some hacks and bonuses that you're g
+ oing to witness tomorrow.<br></p><p>See you soon! ✨</p>\n\n-::~:~::~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJo
+ in with Google Meet: https://meet.google.com/cny-bjuw-okh\nOr dial: (US) +1
+  415-993-1991 PIN: 638944540#\nMore phone numbers: https://tel.meet/cny-bju
+ w-okh?pin=3435266402807&hs=7\n\nLearn more about Meet at: https://support.g
+ oogle.com/a/users/answer/9282720\n\nPlease do not edit this section.\n-::~:
+ ~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ :~:~::-
+LAST-MODIFIED:20230715T081506Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1 day to go for you to witness all the crazy LinkedIn hacks! 🔥
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

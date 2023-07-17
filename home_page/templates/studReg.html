@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{% static 'home_page/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home_page/css/studReg.css' %}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+<body>
+    <div class="" id="div1">
+        <img src="{% static 'home_page/img/bacpic.jpg' %}" style="background-size: cover;height: 100vh;"
+            width="100%" alt="">
+        <form action="#" method="post" onsubmit="return checkall()" novalidate>
+            {% csrf_token %}
+            <div id="f" class="container">
+                <div id="div3" class="">
+                    <!-- firt row for name -->
+                    <div class="row ">
+                        <div class="col-5"> {{form.fname.label_tag}} <span id="sp_fname" class="sp_red"></span> {{form.fname}}  </div>
+                        <div class="offset-1 col-5">{{form.lname.label_tag}} <span id="sp_lname" class="sp_red"></span> {{form.lname}}</div>
+                    </div>
+                    <!-- second row for Father Name -->
+                    <div class="row">
+                        <div class="col-5"> {{form.fatherName.label_tag}} <span id="sp_fatherName" class="sp_red"></span> {{form.fatherName}} </div>
+                        <div class="col-3"> {{form.dob.label_tag}} <span id="sp_dob" class="sp_red"></span> {{form.dob}} </div>
+                        <div class="col-4"> {{form.profilePic.label_tag}} <span id="sp_profilePic" class="sp_red"></span> {{form.profilePic}} </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"> {{form.address.label_tag}} <span id="sp_address" class="sp_red"></span> {{form.address}} </div>
+                        <div class="col-4"> {{form.city.label_tag}} <span id="sp_city" class="sp_red"></span> {{form.city}} </div>
+                        <div class="col-4"> {{form.pincode.label_tag}} <span id="sp_pincode" class="sp_red"></span> {{form.pincode}} </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5">
+                            Course: <span id="sp_course" class="sp_red"></span>
+                            <select name="course" id="course" class="form-select">
+                                <option selected disabled>--Choose Course--</option>
+                                <option>bsc</option>
+                                <option>bcom</option>
+                                <option>bcom hon.</option>
+                                <option>bca</option>
+                            </select>
+                        </div>
+                        <div class="col-5 offset-1"> {{form.mobile.label_tag}} <span id="sp_mob" class="sp_red"></span> {{form.mobile}} </div>
+                    </div>
+                    <!-- seventh row for email -->
+                    <div class="row">
+                        <div class="col-6"> {{form.email.label_tag}} <span id="sp_email" class="sp_red"></span> {{form.email}} </div>
+                        <div class="col-6"> {{form.aadhar.label_tag}} <span id="sp_aadhar" class="sp_red"></span> {{form.aadhar}} </div>
+                    </div>
+                    <div class="row" style="margin-top: 5%;">
+                        <div class="col-3 offset-sm-3 ">
+                            <input type="submit" value="Submit" class="btn btn-primary" style="width: 100%;">
+                        </div>
+                        <div class="col-3  offset-0">
+                            <input type="reset" value="Reset" style="width: 100%;" class="btn btn-warning">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+<script src="{% static 'home_page/js/studReg.js' %}"></script>
+</html>
